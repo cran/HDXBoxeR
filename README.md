@@ -1,5 +1,7 @@
 # HDXBoxeR
 
+![figure_bioinformatics2](https://github.com/mkajano/HDXBoxeR/assets/11892713/2b16a28f-dcfa-40d6-af04-08704dfd3c32)
+
 HDXBoxeR is a tool designed to streamline various aspects of HDX (Hydrogen-Deuterium Exchange) data analysis:
 
 1. **Data Reprocessing:** Reprocesses data to the format required for data publication.
@@ -30,11 +32,28 @@ The HDXBoxeR package is available on GitHub and can be installed using the devto
 This method of installation is an alternative to the CRAN method.
 
 install.packages("devtools") #if not installed
+
 library(devtools) #run next two commends only once
+
 devtools::install_github("mkajano/HDXBoxeR")
 
 ## Loading
+After installing HDXBoxeR in R, load the package using following command:
+
 library(HDXBoxeR)
+
+## vignette and examples
+Please access the vignette with examples at:
+
+https://cran.r-project.org/web//packages/HDXBoxeR/vignettes/HDXBoxeR.html
+
+## test data location:
+After HDXBoxeR package installation the test data will be located in system files of the HDXBoxeR. 
+The path to the input table is shown below:
+
+file_nm<-system.file("extdata", "All_results_table.csv", package = "HDXBoxeR") 
+
+
 
 ## License
 
